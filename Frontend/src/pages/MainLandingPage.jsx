@@ -4,11 +4,13 @@ import download1 from '../images/mision.avif'
 import ConnectPart from '../Component/ConnectPart'
 import ConversionAnimation from '../Component/conversionAnimation'
 import ExploreTool from '../Component/exploreTool'
+import SearchAndOccupations from './skillsAndOccupa'
 export default function MainLandingPage(){
   return (
     <>
       <ExploreTool />
      <ConversionAnimation />
+     <SearchAndOccupations />
           <div className="bg-gray-50 text-gray-800">
         <motion.div
           initial={{ opacity: 0, y: 0 }}
