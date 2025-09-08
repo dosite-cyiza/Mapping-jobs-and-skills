@@ -47,6 +47,7 @@ export default function Navigation(){
         <ul className={`${open?"bottom-full":"bottom-100 h-120 py-20"} transition-all duration-300 overflow-hidden text-lg lg:text-sm lg:flex lg:static items-center gap-5 fixed bg-white lg:bg-transparent bottom-100 top-0 right-0 left-0 px-10 py-0 max-lg:space-y-8 text-[#032147] z-10`}>
            <li><Link to="/">Home</Link></li>
           <li><Link to="/AboutUs">About</Link></li>
+          <li><Link to="/AI">Ask AI</Link></li>
           {/*
           <li><Link to="/Dashboard">Explore</Link></li> 
           */}
