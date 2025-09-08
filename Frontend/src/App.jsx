@@ -7,6 +7,7 @@ import Navigation from './component/navigation'
 import { BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import Login from "./pages/Login"
 import HandleSignUp from "./pages/Signup";
+import GeminiChatbot from './pages/map'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/AboutUs" element={<AboutUs />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/signup" element={<HandleSignUp />} />
+            <Route path="/AI" element={<GeminiChatbot />} />
           </Routes>
       <Footer/>
         </Router>
