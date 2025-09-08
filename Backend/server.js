@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import csv from 'csv-parser';
 import cors from 'cors';
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Fix __dirname and __filename in ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -16,8 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 const data = {};
-
-// Function to read and parse a CSV file
+const API_KEY = 'AIzaSyAxMmBQ-4w9sqMqG5EOFiF25oHF3mq91uw';
 const readCsv = (filePath) => {
   return new Promise((resolve, reject) => {
     const results = [];
@@ -238,6 +238,34 @@ app.get('/api/skills/:id', (req, res) => {
         occupations,
         relatedSkills
     });
+});
+const genAI = new GoogleGenerativeAI(API_KEY);
+
+app.post('/chat', async (req, res) => {
+    try {
+        const { history, message } = req.body;
+        console.log('Received request with history:', history);
+        console.log('And message:', message);
+
+        if (!Array.isArray(history)) {
+            console.error('History is not an array.');
+            return res.status(400).json({ error: 'History must be an array.' });
+        }
+
+        const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+        console.log('Model loaded.');
+        const chat = model.startChat({ history: history });
+        console.log('Chat started.');
+        const result = await chat.sendMessage(message);
+        console.log('Message sent, received result:', result);
+        const responseText = result.response.text();
+        console.log('Extracted response text:', responseText);
+
+        res.json({ text: responseText });
+    } catch (error) {
+        console.error('Caught error in chat endpoint:', error);
+        res.status(500).json({ error: 'An error occurred while processing your request.' });
+    }
 });
 
 // ---- Start the server ----
