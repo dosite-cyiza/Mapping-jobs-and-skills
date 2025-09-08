@@ -36,8 +36,8 @@ export default function Navigation(){
     <>
     <header className="lg:flex items-center justify-between lg:py-5 lg:px-15 pb-25">
       <nav className="fixed bg-white max-lg:p-5 max-lg:shadow-xl lg:bg-transparent lg:static flex items-center justify-between right-0 left-0 px-4 z-50">
-      <div onClick={()=>handleClick()}>
-        <img src={logo} alt="" className="w-15" />
+      <div>
+        <img src={logo} alt="" className="lg:w-25 max-lg:w-15" />
       </div>
       <div onClick={()=>handleClick()} className="lg:hidden">
         <img src={menu} alt="" className="w-6" />
@@ -50,7 +50,7 @@ export default function Navigation(){
           {/*
           <li><Link to="/Dashboard">Explore</Link></li> 
           */}
-          <li onClick={()=>handleAccount()}><button className="bg-[#2B7669] max-lg:w-full text-white px-5 py-2 lg:py-2 rounded-2xl">Account</button></li>
+          <li onClick={()=>handleAccount()}><Link to="/login"><button className="bg-[#2B7669] max-lg:w-full text-white px-5 py-2 lg:py-2 rounded-2xl">Account</button></Link></li>
          <div onClick={()=>handleClick()} className={`${!open?"inline":"hidden"} fixed lg:static right-5 top-5 lg:hidden`}>
           <img src={close} alt="" className="w-10" />
         </div>
@@ -74,36 +74,6 @@ export default function Navigation(){
           <img src={person} alt="" className="w-10" />
          </div>
        </div>
-      
-      {/* Account Modal */}
-      <div className={`${account ? "max-lg:scale-100 max-lg:opacity-100" : "scale-0 opacity-0"} fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md bg-white p-5 space-y-10 z-[100] text-center text-xl text-[#2B7669] font-bold shadow-[1px_2px_10px_1px] rounded-2xl transition-all duration-300 ease-in-out`}>
-        <div>
-        <h1 className="text-xl">My Account</h1>
-        </div>
-        <div>
-          <img src={personG} alt="" className="mx-auto" />
-        </div>
-        <div>
-          <p>Yves Gambira Ntwari</p>
-          <p className="font-light">Front-end developer</p>
-        </div>
-        <div>
-          <button className="bg-[#2B7669] w-full text-white px-5 py-4 lg:py-2 rounded-2xl flex items-center justify-between">
-            <span>Logout</span>
-            <img src={logout} alt=""/>
-          </button>
-        </div>
-                 
-        <div className="absolute right-5 top-5 cursor-pointer" onClick={handleCloseAccount}>
-          <img src={close} alt="" className="w-6 h-6" />
-        </div>
-      </div>
-      
-      {/* Backdrop */}
-      <div 
-        className={`${account ? "max-lg:block" : "hidden"} bg-[#2b766a7a] fixed top-0 left-0 bottom-0 right-0 z-[99] backdrop-blur-sm cursor-pointer`}
-        onClick={handleBackdropClick}
-      ></div>
     </header>
     </>
   )

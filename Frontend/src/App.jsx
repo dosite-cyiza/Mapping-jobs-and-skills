@@ -5,24 +5,25 @@ import AboutUs from './pages/AboutUs'
 import MainLandingPage from './pages/MainLandingPage'
 import Navigation from './component/navigation'
 import { BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
+import Login from "./pages/Login"
+import HandleSignUp from "./pages/Signup";
 
 
 function App() {
 
 
   return (
-
       <>
-      {/* <BrowserRouter> */}
         <Router>
       <Navigation />
           <Routes>
             <Route path="/" element={<MainLandingPage />}></Route>
             <Route path="/AboutUs" element={<AboutUs />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/signup" element={<HandleSignUp />} />
           </Routes>
       <Footer/>
         </Router>
-      {/* </BrowserRouter> */}
       </>
      
   )
