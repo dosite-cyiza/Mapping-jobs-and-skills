@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Rect from '../images/Rectangle.jpg'
+import GroupCategorySkillGraph from "../TabiyaMapping";
 
 
 const Dashboard = () => {
@@ -49,9 +50,10 @@ const Dashboard = () => {
         </p>
       </section>
       <div
-        className="h-52 sm:h-72 md:h-96 w-[95%] mx-auto mt-10 bg-cover rounded-xl border "
-         style={{ backgroundImage:` url('../src/Pages/img/Rectangle.jpg)')` }}
-      />
+        className="h-52 sm:h-72 md:h-96 w-[95%] mx-auto mt-10 bg-cover rounded-xl overflow-hidden bg-gray-500"
+      >
+      <GroupCategorySkillGraph />
+      </div>
       <div className="flex justify-center items-center bg-gray-100 mt-10 w-[95%] mx-auto mb-10">
         <div className="w-80 p-4 rounded-xl shadow-lg bg-white border border-gray-300 animate-slide-up">
           <p className="text-lg font-bold text-center">{popupText}</p>

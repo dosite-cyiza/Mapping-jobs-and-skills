@@ -9,10 +9,6 @@ import GroupCategorySkillGraph from "../TabiyaMapping"
 export default function MainLandingPage(){
   return (
     <>
-    <div className="bg-gray-400 flex items-center justify-center">
-
-    <GroupCategorySkillGraph/>
-    </div>
       <ExploreTool />
      <ConversionAnimation />
      <SearchAndOccupations />
