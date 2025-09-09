@@ -23,9 +23,8 @@ const Dashboard = () => {
 
   return (
     <div className="m-0 p-0 font-sans">
-      {/* <header className="w-[95%] h-[50px] lg:h-[60px] mx-auto mt-6 flex items-center gap-4 text-center">
+      <header className="w-[95%] h-[50px] lg:h-[60px] mx-auto mt-6 flex items-center gap-4 text-center">
         <nav className="hidden lg:flex gap-6 text-green-950">
-          <span className="cursor-pointer hover:underline">Map Explorers</span>
           <span className="cursor-pointer hover:underline">Compare current skills & Occupations needs </span>
           <span className="cursor-pointer hover:underline"><Link to="/SkillsExplorer">Skills Explorer</Link></span>
           <span className="cursor-pointer hover:underline"><Link to="/SearchOccupations">Occupations Explorer</Link> </span>
@@ -37,9 +36,9 @@ const Dashboard = () => {
           alt="menu icon"
           className="h-6 ml-auto lg:hidden cursor-pointer"
         />
-      </header> */}
+      </header>
 
-      {/* <section className="bg-[#D9D9D9] text-black w-[95%] mx-auto mt-5 p-4 rounded-md">
+      <section className="bg-[#D9D9D9] text-black w-[95%] mx-auto mt-5 p-4 rounded-md">
         <p className="text-[16px] md:text-[18px] leading-relaxed text-center">
           Tabiya builds open-source software and standards to unlock economic
           opportunity for all. We partner with government employment services,
@@ -48,7 +47,7 @@ const Dashboard = () => {
           mission is to make labor markets more efficient, equitable, and
           inclusive.
         </p>
-      </section> */}
+      </section>
       <div
         className="h-52 sm:h-72 md:h-96 w-[95%] mx-auto mt-10 bg-cover rounded-xl border "
          style={{ backgroundImage:` url('../src/Pages/img/Rectangle.jpg)')` }}

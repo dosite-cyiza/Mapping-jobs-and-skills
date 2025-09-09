@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter } from 
 import Login from "./pages/Login"
 import HandleSignUp from "./pages/Signup";
 import GeminiChatbot from './pages/map'
+import Dashboard from './pages/dashboard'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/login" element={<Login />}></Route>
             <Route path="/signup" element={<HandleSignUp />} />
             <Route path="/AI" element={<GeminiChatbot />} />
+            <Route path="/Explore" element={<Dashboard />}></Route>
           </Routes>
       <Footer/>
         </Router>
