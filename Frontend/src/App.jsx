@@ -26,7 +26,7 @@ function App() {
             <Route path="/signup" element={<HandleSignUp />} />
             <Route path="/AI" element={<GeminiChatbot />} />
           </Routes>
-            <CompareSkillsAndOccupations />
+            
           
       <Footer/>
         </Router>

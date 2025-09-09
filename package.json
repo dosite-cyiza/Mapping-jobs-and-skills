@@ -5,6 +5,7 @@
     "csv-parser": "^3.2.0",
     "express": "^5.1.0",
     "framer-motion": "^12.23.12",
-    "lucide-react": "^0.542.0"
+    "lucide-react": "^0.542.0",
+    "priorityqueuejs": "^2.0.0"
   }
 }
