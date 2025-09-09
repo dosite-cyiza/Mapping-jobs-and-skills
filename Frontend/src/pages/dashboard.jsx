@@ -25,7 +25,7 @@ const Dashboard = () => {
     <div className="m-0 p-0 font-sans">
       <header className="w-[95%] h-[50px] lg:h-[60px] mx-auto mt-6 flex items-center gap-4 text-center">
         <nav className="hidden lg:flex gap-6 text-green-950">
-          <span className="cursor-pointer hover:underline">Compare current skills & Occupations needs </span>
+          <span className="cursor-pointer hover:underline"><Link to="/Explore/Compare">Compare current skills & Occupations needs</Link></span>
           <span className="cursor-pointer hover:underline"><Link to="/SkillsExplorer">Skills Explorer</Link></span>
           <span className="cursor-pointer hover:underline"><Link to="/SearchOccupations">Occupations Explorer</Link> </span>
         </nav>
