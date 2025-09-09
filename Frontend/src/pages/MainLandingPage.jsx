@@ -5,9 +5,14 @@ import ConnectPart from '../Component/ConnectPart'
 import ConversionAnimation from '../Component/conversionAnimation'
 import ExploreTool from '../Component/exploreTool'
 import SearchAndOccupations from './skillsAndOccupa'
+import GroupCategorySkillGraph from "../TabiyaMapping"
 export default function MainLandingPage(){
   return (
     <>
+    <div className="bg-gray-400 flex items-center justify-center">
+
+    <GroupCategorySkillGraph/>
+    </div>
       <ExploreTool />
      <ConversionAnimation />
      <SearchAndOccupations />
