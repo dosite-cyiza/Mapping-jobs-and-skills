@@ -10,6 +10,8 @@ import HandleSignUp from "./pages/Signup";
 import GeminiChatbot from './pages/map'
 import Dashboard from './pages/dashboard'
 import CompareSkillsAndOccupations from './pages/CampareSO'
+import SkillsExplorer from './pages/SkillsExplorer'
+import OccupationsExplorer from './pages/OccupationsExplorer '
 
 
 
@@ -32,6 +34,7 @@ function App() {
             
           
       <Footer/>
+        
         </Router>
       </>
      
