@@ -12,6 +12,7 @@ import Dashboard from './pages/dashboard'
 import CompareSkillsAndOccupations from './pages/CampareSO'
 import SkillsExplorer from './pages/SkillsExplorer'
 import OccupationsExplorer from './pages/OccupationsExplorer '
+import SearchAndOccupations from './pages/skillsAndOccupa'
 
 
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/Explore" element={<Dashboard />}></Route>
             <Route path="/Explore/Compare" element={<CompareSkillsAndOccupations />}></Route>
             <Route path="/Explore/SkillsExplorer" element={<SkillsExplorer />}></Route>
+            <Route path="/Explore/SearchOccupations" element={<SearchAndOccupations />}></Route>
           </Routes>
             
           
