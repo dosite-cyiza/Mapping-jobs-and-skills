@@ -30,6 +30,7 @@ function App() {
             <Route path="/AI" element={<GeminiChatbot />} />
             <Route path="/Explore" element={<Dashboard />}></Route>
             <Route path="/Explore/Compare" element={<CompareSkillsAndOccupations />}></Route>
+            <Route path="/Explore/SkillsExplorer" element={<SkillsExplorer />}></Route>
           </Routes>
             
           

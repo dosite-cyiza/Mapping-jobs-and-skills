@@ -71,12 +71,11 @@ const SkillsExplorer = () => {
 
     const { label, description, occupations, relatedSkills } = selectedSkill;
     const isEssential = (type) => type === 'essential' ? 'text-green-500' : 'text-yellow-500';
-
     return (
       <div className="w-full max-w-4xl grid gap-8 md:grid-cols-2 mt-8 animate-fade-in">
         <div className="bg-white dark:bg-gray-100 p-6 rounded-2xl shadow-lg md:col-span-2">
-          <h2 className="text-2xl font-bold mb-4 border-b-2 pb-2 text-pink-500">
-            <span className="text-blue-600">Skill:</span> {label}
+          <h2 className="text-2xl font-bold mb-4 border-b-2 pb-2 text-[#2B7669]">
+            <span className="text-[#032147]">Skill:</span> {label}
           </h2>
           <p className="text-gray-700 dark:text-gray-700">
             {description || 'No description available.'}
@@ -84,7 +83,7 @@ const SkillsExplorer = () => {
         </div>
         <div className="bg-white dark:bg-gray-100 p-6 rounded-2xl shadow-lg">
           <h3 className="text-xl font-bold mb-4">
-            <span className="text-purple-600">Occupations Requiring This Skill</span>
+            <span className="text-[#032147]">Occupations Requiring This Skill</span>
           </h3>
           <ul className="list-disc pl-5 space-y-2">
             {occupations.length > 0 ? (
@@ -150,7 +149,7 @@ const SkillsExplorer = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search for a skill..."
-            className="text-gray-100 flex-grow p-4 rounded-full border-2 border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors bg-white dark:bg-gray-700 placeholder-gray-500 dark:placeholder-gray-100"
+            className="text-black flex-grow p-4 rounded-full border-1 border-black  focus:outline-none transition-colors bg-white placeholder-gray-500 dark:placeholder-black"
           />
         </div>
       </div>
