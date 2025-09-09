@@ -9,6 +9,7 @@ import Login from "./pages/Login"
 import HandleSignUp from "./pages/Signup";
 import GeminiChatbot from './pages/map'
 import CompareSkillsAndOccupations from './pages/CampareSO'
+import SkillsExplorer from './pages/SkillsExplorer'
 
 
 
@@ -29,6 +30,7 @@ function App() {
             
           
       <Footer/>
+     
         </Router>
       </>
      
