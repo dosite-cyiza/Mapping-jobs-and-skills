@@ -24,7 +24,7 @@ function App() {
         <Router>
       <Navigation />
           <Routes>
-            <Route path="/" element={<MainLandingPage />}></Route>
+            <Route path="/" element={<MainLandingPage/>}></Route>
             <Route path="/AboutUs" element={<AboutUs />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/signup" element={<HandleSignUp />} />
