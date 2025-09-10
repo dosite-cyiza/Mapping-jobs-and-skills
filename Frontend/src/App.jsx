@@ -13,6 +13,7 @@ import CompareSkillsAndOccupations from './pages/CampareSO'
 import SkillsExplorer from './pages/SkillsExplorer'
 import OccupationsExplorer from './pages/OccupationsExplorer '
 import SearchAndOccupations from './pages/skillsAndOccupa'
+import ConnectPart from './Component/ConnectPart'
 
 
 
@@ -36,7 +37,7 @@ function App() {
           </Routes>
             
           
-      <Footer/>
+      <ConnectPart />
         
         </Router>
       </>

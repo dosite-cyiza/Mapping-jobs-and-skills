@@ -38,7 +38,6 @@ const GeminiChatbot = () => {
 
   const checkServerConnection = async () => {
     try {
-      // Test with a simple chat request to verify server is working
       const response = await fetch('http://localhost:3000/chat', {
         method: 'POST',
         headers: {
@@ -72,8 +71,6 @@ const GeminiChatbot = () => {
     setError('');
 
     try {
-      // Convert messages to Gemini chat history format
-      // Skip the initial bot greeting message for history
       const conversationHistory = messages.slice(1).map(msg => ({
         role: msg.role === 'model' ? 'model' : 'user',
         parts: [{ text: msg.content }]

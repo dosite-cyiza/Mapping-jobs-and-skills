@@ -276,11 +276,9 @@ export default function GroupCategorySkillGraph() {
                 <div className="flex items-center space-x-2">
                     <span className="w-3 h-3 bg-green-600 rounded-full inline-block" /> Category
                 </div>
+               
                 <div className="flex items-center space-x-2">
-                    <span className="w-3 h-3 bg-yellow-500 rounded-full inline-block" /> Essential Skill
-                </div>
-                <div className="flex items-center space-x-2">
-                    <span className="w-3 h-3 bg-gray-400 rounded-full inline-block" /> Non-Essential Skill
+                    <span className="w-3 h-3 bg-gray-400 rounded-full inline-block" />  Skills
                 </div>
             </div>
 

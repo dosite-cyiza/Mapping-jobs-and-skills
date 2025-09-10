@@ -50,7 +50,7 @@ const Dashboard = () => {
         </p>
       </section>
       <div
-        className="h-52 sm:h-72 md:h-96 w-[95%] mx-auto mt-10 bg-cover rounded-xl overflow-hidden bg-gray-500"
+        className="h-52 sm:h-72 md:h-96 w-[95%] mx-auto mt-10 bg-cover rounded-xl overflow-hidden bg-gray-200"
       >
       <GroupCategorySkillGraph />
       </div>
@@ -59,7 +59,6 @@ const Dashboard = () => {
           <p className="text-lg font-bold text-center">{popupText}</p>
         </div>
       </div>
-
       <section className="w-[95%] mx-auto mt-10 flex flex-wrap justify-center gap-5">
         {[
           { label: "Total Occupations", value: "3,000+", bg: "#D9D9D9", text: "#2B7669" },
